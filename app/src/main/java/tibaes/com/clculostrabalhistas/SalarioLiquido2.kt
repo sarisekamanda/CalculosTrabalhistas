@@ -17,7 +17,7 @@ class SalarioLiquido2 : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         btnCalcularSL.setOnClickListener {
-            val liquido = (etxSalarioBrutoSL.text.toString().toDouble() - (etxSalarioBrutoSL.text.toString().toDouble() * 0.8))
+            val liquido = (etxSalarioBrutoSL.text.toString().toDouble() - (etxSalarioBrutoSL.text.toString().toDouble() * 0.08))
             txtResultadoSL.text =  liquido.toString()
         }
 

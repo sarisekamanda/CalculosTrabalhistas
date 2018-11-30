@@ -17,7 +17,7 @@ class SalarioHora : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         btnCalcularSH.setOnClickListener {
-            val salarioHora = (etxHoras.text.toString().toDouble() - (etxHoras.text.toString().toDouble() * 0.8))
+            val salarioHora = (etxSalarioBrutoSH.text.toString().toDouble() / (etxHoras.text.toString().toDouble() * 20))
             txtResultadoSH.text =  salarioHora.toString()
         }
 
