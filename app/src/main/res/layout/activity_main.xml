@@ -22,16 +22,10 @@
             android:text="@string/fgts" />
 
         <Button
-            android:id="@+id/btnSalarioLiquido"
+            android:id="@+id/btnSalarioLiquido2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/salarioLiquido" />
-
-        <Button
-            android:id="@+id/btnHoraExtra"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/horaExtra" />
 
         <Button
             android:id="@+id/btnSalarioHora"

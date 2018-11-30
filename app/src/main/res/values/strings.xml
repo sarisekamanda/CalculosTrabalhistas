@@ -2,11 +2,12 @@
     <string name="app_name">Cálculos Trabalhistas</string>
     <string name="fgts">CALCULAR FGTS</string>
     <string name="salarioLiquido">CALCULAR SALÁRIO LÍQUIDO</string>
-    <string name="horaExtra">CALCULAR HORA EXTRA</string>
     <string name="salarioHora">CALCULAR SALÁRIO POR HORA</string>
     <string name="salarioBruto">Salário bruto</string>
     <string name="x">X</string>
-    <string name="mesesTrabalhados">Número de meses trabalhados</string>
     <string name="calcular">CALCULAR</string>
     <string name="fonte">FONTE</string>
+    <string name="horas">Horas por Dia</string>
+    <string name="mesesTrabalhados">Meses Trabalhados</string>
+
 </resources>

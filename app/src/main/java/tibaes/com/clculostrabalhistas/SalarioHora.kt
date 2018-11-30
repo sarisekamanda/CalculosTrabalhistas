@@ -5,25 +5,25 @@ import android.net.Uri
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import kotlinx.android.synthetic.main.activity_fgts.*
+import kotlinx.android.synthetic.main.activity_salario_hora.*
 
-class FGTSActivity : AppCompatActivity() {
+class SalarioHora : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_fgts)
+        setContentView(R.layout.activity_salario_hora)
 
         // incluir o botão de voltar na página
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        btnCalcular.setOnClickListener {
-            val fgts = ((etxSalarioBrutoSL.text.toString().toDouble() * 0.8) * etxMesesTrabalhados.text.toString().toDouble()).toString()
-            txtResultadoSL.text =  fgts
+        btnCalcularSH.setOnClickListener {
+            val salarioHora = (etxHoras.text.toString().toDouble() - (etxHoras.text.toString().toDouble() * 0.8))
+            txtResultadoSH.text =  salarioHora.toString()
         }
 
-        // abrindo outro site
-        btnVerFonte.setOnClickListener {
-            val uris = Uri.parse("https://calculofgts.net/")
+// abrindo outro site
+        btnVerFonteSH.setOnClickListener {
+            val uris = Uri.parse("http://www.calculadoratrabalhista.com.br/calculo-da-hora-trabalhada/")
             val intents = Intent(Intent.ACTION_VIEW, uris)
             startActivity(intents)
         }

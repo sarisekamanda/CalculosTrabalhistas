@@ -5,25 +5,25 @@ import android.net.Uri
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import kotlinx.android.synthetic.main.activity_fgts.*
+import kotlinx.android.synthetic.main.activity_salario_liquido2.*
 
-class FGTSActivity : AppCompatActivity() {
+class SalarioLiquido2 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_fgts)
+        setContentView(R.layout.activity_salario_liquido2)
 
         // incluir o botão de voltar na página
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        btnCalcular.setOnClickListener {
-            val fgts = ((etxSalarioBrutoSL.text.toString().toDouble() * 0.8) * etxMesesTrabalhados.text.toString().toDouble()).toString()
-            txtResultadoSL.text =  fgts
+        btnCalcularSL.setOnClickListener {
+            val liquido = (etxSalarioBrutoSL.text.toString().toDouble() - (etxSalarioBrutoSL.text.toString().toDouble() * 0.8))
+            txtResultadoSL.text =  liquido.toString()
         }
 
         // abrindo outro site
-        btnVerFonte.setOnClickListener {
-            val uris = Uri.parse("https://calculofgts.net/")
+        btnVerFonteSL.setOnClickListener {
+            val uris = Uri.parse("http://www.calculador.com.br/calculo/salario-liquido")
             val intents = Intent(Intent.ACTION_VIEW, uris)
             startActivity(intents)
         }
@@ -41,3 +41,6 @@ class FGTSActivity : AppCompatActivity() {
         }
     }
 }
+
+
+
